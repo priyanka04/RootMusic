@@ -4,6 +4,13 @@
 }
 .container{
     padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../images/rm-main-bg.png");
+    background-size: 100% 100% !important;
 }
 
 /*fonts*/
@@ -13,7 +20,8 @@
 }
 @font-face {
     font-family: "victorian";
-    src: url(../fonts/VICTORIAN%20LET.TTF);
+    src: url("http://www.myfontfree.com/data/54/v/victorian-let/51253___.TTF"),
+         url("../fonts/ufonts.com_victorian_let_plain_1.0.eot");
 }
 /*fonts*/
 
@@ -35,6 +43,7 @@
     border-radius: 0;
     background-color: transparent;
     padding: 5px 0;
+
 }
 .nav-pills > li > a{
     text-transform: uppercase;
@@ -44,11 +53,11 @@
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #ffffff;
-    background-color:rgba(42,114,132,0.3);}
+    background-color:transparent;}
 
 .nav-pills > li.active , .nav-pills > li.active, .nav-pills > li.active {
     color: #ffffff;
-    background-color: rgba(34,34,34,0.6);
+
 
 }
 .nav > li > a:hover, .nav > li > a:focus {
@@ -108,9 +117,7 @@
     border-color: #c35413;}
 
 /*search button css*/
-.main-content{
-    background-color: #d2661d;
-}
+
 .landing-img-wrapper img{
     width: 100%;
 }
@@ -121,14 +128,13 @@
     width: 100%;
 }
 .btn-pricepoint button{
-    width: 25.1%;
-
+    width: 25%;
 }
 .btn-primary {
-    color: #fff;
+    color: black;
     background-color: #d2661d;
     border-color: #a8321c;
-    font-family: victorian;
+    font-family: myriad-pro;
 }
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover,
 .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover,.btn-primary:active,.btn-primary:hover,.btn-primary:focus{
@@ -145,10 +151,122 @@
     border-left: 3px;
 }
 /*buttons*/
+
+/*tabs*/
+.tab-content{
+    padding-top: 15px;
+}
+
+/*tabs*/
+.language-list{
+    padding: 0 2px 5px;
+}
+.language-list li{
+    list-style-type: none;
+    display: inline-block;
+    background-image: url("../images/rm-li-bg.png");
+    background-size: 100% 100% !important;
+    height: 41px;
+    width: 16.67%;
+    text-align: center;
+    border: none;
+}
+
+.language-list li a{
+    font-size: 0.6em;
+    color: black;
+
+}
+.language-list li a:active, .language-list li a:hover, .language-list li a:focus{
+    color: #ffffff;
+}
+.rm-semiheader{
+    margin:  0 15px;
+    position: relative;
+}
+
+.rm-semiheader h4{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    border-top: 1px solid #9a221c;
+    border-bottom: 1px solid #9a221c;
+    padding: 4px 0;
+    color: #ffffff;
+
+}
+.audio-video-controls{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+}
+.rm-video{
+    position: absolute;
+    left: -5px;
+}
+.rm-audio{
+    position: absolute;
+    right: -5px;
+}
+
+/*thumbnail css*/
+
+.row{
+    margin: 0;
+}
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+.rm-thumbnail{
+    padding: 2px;
+    margin: 10px 0;
+}
+.col-xs-4{
+    padding: 0 5px;
+}
+.thumbnail{
+    padding: 0;
+    border-radius: 0;
+    background-color: #eb9622;
+    border: 2px solid #eb9622;
+    margin-bottom: 10px;
+}
+.caption{
+    padding: 0 1px !important;
+    height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.caption a{
+    font-size: 10px;
+    color: black;
+}
+.thumbnail a img{
+    width: 100%;
+    height: 100px;
+}
+/*thumbnail css*/
+/*msg css start*/
+.message-status{
+    padding: 10px;
+}
+
+.alert{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.alert-danger{
+    background: rgba(242,222,222,0.4);
+    color: #9a221c;
+}
+/*msg css end*/
 /*footer css*/
 .footer-wrapper{
-    position: absolute;
-    bottom: 0;
+    position:absolute;
+    bottom: 0px;
     text-align: center;
     background-color: #c35413;
     width: 100%;
@@ -196,7 +314,7 @@
         color: white;
     }
     .navbar-default {
-        background-color:transparent;
+        background-color:orange;
         border-color: transparent;
     }
     .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
@@ -225,7 +343,9 @@
     }
 
 }
+@media only screen and (max-device-width: 480px){
 
+}
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1920px) {
 
@@ -233,11 +353,18 @@
         padding: 0;
         width: 360px;
         margin: 0 auto;
-        height: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url("../images/rm-main-bg.png");
+        background-size: 100% 100% !important;
     }
 
    .footer-wrapper{
        position: absolute;
        width: 360px;
+       bottom: 0px;
    }
 }
